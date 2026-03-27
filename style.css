@@ -87,18 +87,38 @@ header .container {
   letter-spacing: 1px;
   font-family: "Poppins", "Segoe UI", sans-serif;
 
-  padding: 0.4rem 1rem;
-  border-radius: 15px;
+  padding: 0.45rem 1.1rem;
+  border-radius: 16px;
 
-  background: linear-gradient(135deg, rgba(255, 182, 193, 0.4), rgba(224, 195, 252, 0.4));
-  backdrop-filter: blur(10px);
+  /* pink girly gradient */
+  background: linear-gradient(135deg, #ff6fa3, #ffb6c1, #ffd1dc);
 
-  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.25);
+  box-shadow: 0 6px 18px rgba(255, 105, 180, 0.35);
 
   position: relative;
   display: inline-block;
 
   transition: all 0.3s ease;
+}
+
+/* cute underline sparkle line */
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 18%;
+  bottom: 6px;
+  width: 64%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+/* hover effect */
+.logo:hover {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.5);
+  background: linear-gradient(135deg, #ff4f93, #ff9bb8, #ffd1dc);
 }
 
 /* decorative underline effect */
