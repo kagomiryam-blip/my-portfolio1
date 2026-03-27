@@ -61,20 +61,40 @@ header {
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+header {
+  background: linear-gradient(135deg, #ffb6c1, #ffd6e7, #e0c3fc);
+  padding: 1rem 2rem;
+  box-shadow: 0 6px 20px rgba(255, 182, 193, 0.25);
+  border-radius: 0 0 20px 20px;
 }
+
+/* Container layout */
 header .container {
-  display: flex;              /* FLEXBOX — row layout */
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1rem;
 }
+
+/* Logo styling */
 .logo {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: white;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
   text-decoration: none;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for logo */
+.logo:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
 }
 nav ul  { list-style: none; display: flex; gap: 1.5rem; }
 nav a   {
