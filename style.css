@@ -297,7 +297,7 @@ footer {
 }
 
 /* Mobile only — collapse nav to centre-aligned column */
-@media (max-width: 768px) {
+@media (max-width: 599px) {
   header .container {
     flex-direction: column;
     text-align: center;
